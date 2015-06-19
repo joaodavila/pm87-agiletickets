@@ -123,7 +123,7 @@ public class Espetaculo {
 			}
 			else if (Periodicidade.SEMANAL == periodicidade){
 				qtdDias = Weeks.weeksBetween(inicio, fim).getWeeks();
-				for (int i = 1; i <= qtdDias; i++) {
+				for (int i = 0; i <= qtdDias; i++) {
 					Sessao sessao1 = new Sessao();
 					sessao1.setEspetaculo(this);
 					sessao1.setDuracaoEmMinutos(60);
